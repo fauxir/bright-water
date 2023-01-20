@@ -1,0 +1,21 @@
+.product_list_wrapper {
+  background: gray;
+  margin-top: -20px;
+  height: 70vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.product_list_title {
+  color: white;
+}
+
+.product_card_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=productList.css.map */

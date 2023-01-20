@@ -1,0 +1,15 @@
+.navbar_wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  height: 4rem;
+  position: fixed;
+  width: 100%;
+}
+
+.navbar_items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=navBar.css.map */

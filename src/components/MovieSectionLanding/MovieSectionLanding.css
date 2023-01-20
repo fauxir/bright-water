@@ -1,0 +1,28 @@
+.video {
+  min-width: 100%;
+  min-height: 100%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.video_wrapper {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video_text {
+  z-index: 1;
+  position: absolute;
+  color: white;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}/*# sourceMappingURL=MovieSectionLanding.css.map */

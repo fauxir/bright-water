@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&family=Old+Standard+TT:wght@400;700&display=swap')
+
+$titleFont: Old Standard TT
+$paragraphFont: Mulish
+
+.footer_wrapper
+    display: flex
+    justify-content: space-around
+    align-items: start
+    background: #FAF6F2
+    padding-bottom: 2rem 
+    padding-top: 2rem
+    z-index: 1
+
+.brand_name_footer
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    margin-top: 0px
+
+.nav_list
+    padding-left: 0px
+    display: flex
+    flex-direction: column
+    font-family: &$paragraphFont
+
+.footer_title
+    font-family: $titleFont
+
+.footer_text
+    font-family: $paragraphFont
+
+.nav_link
+    margin-bottom: 0.9rem
+
+.footer_text_bw
+    font-family: $paragraphFont
+    margin-top: -0rem
+
+@media only screen and (max-width: 600px)
+    .footer_wrapper
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        background: #FAF6F2
+        padding-bottom: 2rem 
+        padding-top: 2rem
+    .contact_details_footer
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+    .menu_items_footer
+        margin-top: 1rem
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center

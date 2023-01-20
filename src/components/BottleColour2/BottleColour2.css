@@ -1,0 +1,30 @@
+.wrapper_bottle2 {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: radial-gradient(at bottom, #4a432d 1%, #7c715f);
+}
+
+.image_wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottle_image {
+  height: 50rem;
+  transform: rotate(22deg);
+}
+
+.text_bottle_colour_2 {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  color: white;
+  text-align: center;
+}/*# sourceMappingURL=BottleColour2.css.map */

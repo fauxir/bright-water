@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&family=Old+Standard+TT:wght@400;700&display=swap')
+
+$titleFont: Old Standard TT
+$paragraphFont: Mulish
+
+.bottle_details_wrapper
+  height: 100vh
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: row-reverse
+  background: #d49e8d
+  overflow: hidden
+
+.bottle_detail_image
+  width: 80%
+
+.img_wrapper
+  height: 100%
+  align-items: center
+  display: flex
+  justify-content: center
+
+.details_text
+  background: #d49e8d
+  z-index: 1
+  text-align: left
+  font-family: $paragraphFont
+
+.details_title_text
+  background: #d49e8d
+  z-index: 1
+  font-family: $titleFont
+
+.text
+  margin-left: 3rem
+  display: flex
+  justify-content: center
+  align-items: start
+
+.animateTextDetail
+  animation: fade-in 1.2s
+  animation-name: animate_text_detail
+
+@keyframes animate_text_detail
+  0%
+    opacity: 0
+
+  100%
+    opacity: 1
+
+@media only screen and (max-width: 600px)
+  .details_text
+    text-align: center
+    font-size: 27px
+
+  .bottle_detail_image
+    width: 95%
+
+  .text
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-left: 0rem
+    width: 80%
+
+  .bottle_details_wrapper
+    flex-direction: column
+
+  .bottle_details_wrapper
+    height: 52rem
+
+  .img_wrapper
+    height: 15rem
+    margin-bottom: 2rem
+
+
+

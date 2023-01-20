@@ -1,0 +1,46 @@
+.bottle_presentation_wrapper {
+  margin: 1rem;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.navy_bottle1 {
+  height: 38rem;
+  position: relative;
+  transform: rotate(-24deg);
+  top: -3rem;
+  left: 10rem;
+}
+
+.armygreen_bottle2 {
+  height: 38rem;
+  position: relative;
+  transform: rotate(-31deg);
+  top: 25rem;
+  right: 11rem;
+}
+
+.peach_bottle3 {
+  height: 38rem;
+  position: relative;
+  transform: rotate(17deg);
+  top: 6rem;
+  left: 2rem;
+}
+
+.three_bottles {
+  height: 100%;
+  width: 60%;
+}
+
+.text {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  width: 40%;
+}/*# sourceMappingURL=BottlePresentation.css.map */

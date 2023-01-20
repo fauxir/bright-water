@@ -1,0 +1,62 @@
+.wrapper_bottle2
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    overflow: hidden
+    background: radial-gradient(at bottom, #4a432d 1%, #7c715f)
+
+
+
+.image_wrapper
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+
+.bottle_image_green
+    width: 45%
+    transform: rotate(22deg)
+
+.text_bottle_colour_2
+    position: absolute
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 300%
+    color: #FAF6F2
+    text-align: center
+
+.animateTextBottle2
+  animation: slide-in-bottom 1.5s  
+  animation-name: animate_text_bottle_colour2
+
+
+@keyframes animate_text_bottle_colour2
+  0%
+    transform: translateY(300px)
+    opacity: 0
+  100%
+    opacity: 1
+    animation-delay: 250ms
+    transform: translateY(0)
+    transform: rotate(0)
+
+.animateBottleImage2 
+  animation: fade-in 1.2s  
+  animation-name: animate_bottle_image2
+
+
+@keyframes animate_bottle_image2
+  0%
+    opacity: 0
+  100%
+    animation-delay: 2000ms
+    opacity: 1
+    transform: rotate(22deg)
+
+@media only screen and (max-width: 400px) 
+  .text_bottle_colour_2
+    font-size: 200%
+    
+    

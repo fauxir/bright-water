@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&family=Old+Standard+TT:wght@400;700&display=swap')
+
+$titleFont: Old Standard TT
+$paragraphFont: Mulish
+$heroColor: #FAF6F2
+
+
+.brand_name_hero
+    background: $heroColor
+    font-size: 5rem
+    position: relative
+    top: 5rem
+    z-index: 1
+    font-family: $titleFont
+    
+
+.hero_wrapper
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    background: $heroColor
+    height: 100vh
+    overflow: hidden
+
+.bottle_pic_hero
+    height: 65vh 
+    position: relative
+    top: 7rem
+
+.animateBottlePicHero
+  animation: slide-in-bottom 1.5s  
+  animation-name: animate_bottle_pic_hero
+
+
+@keyframes animate_bottle_pic_hero
+  0%
+    transform: translateY(300px)
+    opacity: 0
+  100%
+    opacity: 1
+    animation-delay: 250ms
+    transform: translateY(0)
+    transform: rotate(0)
+
+.animateTextBottlePicHero 
+  animation: fade-in 2s  
+  animation-name: animate_text_bottle_pic_hero
+
+
+@keyframes animate_text_bottle_pic_hero
+  0%
+    opacity: 0
+  100%
+    opacity: 1
+    animation-delay: 250ms
+
+@media only screen and  (max-width: 600px)
+  .brand_name_hero
+    font-size: 3em
+  .bottle_pic_hero
+    height: 45vh 
+    position: relative
+    top: 15rem

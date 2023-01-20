@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&family=Old+Standard+TT:wght@400;700&display=swap')
+
+$titleFont: Old Standard TT
+$paragraphFont: Mulish
+    
+.video
+    min-width: 100%
+    min-height: 100%
+    position: relative
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    object-fit: cover
+
+
+.video_wrapper
+    height: 100vh
+    overflow: hidden
+    display: flex
+    justify-content: center
+    align-items: center
+
+.video_text
+    z-index: 1
+    position: absolute
+    color: #FAF6F2
+    justify-content: center
+    display: flex
+    align-items: center
+    flex-direction: column
+
+.video_text_p
+    font-family: $titleFont
+
+.video_text_title
+    font-family: $paragraphFont

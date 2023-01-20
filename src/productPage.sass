@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&family=Old+Standard+TT:wght@400;700&display=swap')
+
+$titleFont: Old Standard TT
+$paragraphFont: Mulish
+
+.product_page_wrapper
+    height: fit
+    padding-bottom: 4rem 
+    top: 5rem
+    z-index: 1
+    margin-top: 4rem
+    background: #ded1b2
+    display: flex
+    justify-content: center
+    align-content: center
+
+.product_wrapper_view
+    background: #6b7d89
+    box-shadow: 10px 8px 20px #b9af95
+    width: fit
+    height: 80%
+    margin-top: 3.5rem
+    border-radius: 15px
+    flex-direction: row
+    display: flex
+    justify-content: space-between
+    overflow: hidden
+
+.product_image_view
+    height: 32rem
+
+.product_text
+    color: #FAF6F2
+    padding-top: 2rem
+    width: 60%
+    margin-left: 4rem
+    margin-right: 3rem
+    display: flex
+    justify-content: start
+    align-items: start
+    flex-direction: column
+
+.add_to_cart_btn
+    margin-top: 4rem
+    font-family: $paragraphFont
+    display: inline-block
+    outline: 0
+    cursor: pointer
+    border: none
+    padding: 0 39px
+    height: 45px
+    color: black
+    line-height: 45px
+    border-radius: 7px
+    background-color: #FAF6F2
+    font-weight: 400
+    font-size: 16px
+    box-shadow: 0 4px 14px 0 #463f39
+    transition: background 0.2s ease,color 0.2s ease,box-shadow 0.2s ease
+
+.add_to_cart_btn:hover
+    background: #fde7d1
+    box-shadow: 0 6px 20px #64625f
+                
+.count_control
+    font-family: $paragraphFont
+    display: inline-block
+    outline: 0
+    cursor: pointer
+    border: none
+    padding: 0 7px
+    height: 24px
+    color: black
+    border-radius: 7px
+    background-color: #FAF6F2
+    font-weight: 400
+    font-size: 16px
+    box-shadow: 0 4px 14px 0 #463f39
+    transition: background 0.2s ease,color 0.2s ease,box-shadow 0.2s ease
+
+.count_control:hover
+    background: #fde7d1
+    box-shadow: 0 6px 20px #64625f
+
+
+.counter_wrapper
+    margin-top: 2rem
+
+.counter
+    width: 100%
+    margin-top: 0.5rem
+    margin-bottom: 0.5rem
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-direction: row
+
+.line
+    background: #424c53
+    height: 2px
+    width: 10rem
+
+.product_name_page
+    font-family: $titleFont
+
+.product_description_page
+    font-family: $paragraphFont
+
+.product_price_page
+    font-family: $titleFont
+    font-weight: 700
+    font-size: 18px
+
+.count
+    font-family: $paragraphFont
+
+@media only screen and (max-width: 768px)
+    .product_wrapper_view
+        background: #6b7d89
+        box-shadow: 10px 8px 20px #b9af95
+        width: fit
+        height: 61rem
+        margin-top: 3.5rem
+        padding-bottom: 2rem
+        border-radius: 15px
+        flex-direction: column
+        display: flex
+        margin-left: 1rem
+        margin-right: 1rem
+        align-items: center
+        justify-content: space-between
+        overflow: hidden
+    .product_text
+        color: #FAF6F2
+        padding-top: 1rem
+        padding-bottom: 1rem
+        width: 60%
+        margin-left: 3rem
+        margin-right: 3rem
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+    .product_description_page
+        font-family: $paragraphFont
+        text-align: center
+    .product_image_view
+        width: 100%
+        object-fit: cover
+
+@media only screen and (min-width: 769px)
+    .product_page_wrapper
+        padding-bottom: 18rem

@@ -1,0 +1,560 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&family=Old+Standard+TT:wght@400;700&display=swap')
+
+$titleFont: Old Standard TT
+$paragraphFont: Mulish
+
+.bottle_presentation_wrapper
+    height: 100vh
+    overflow: hidden
+    display: flex
+    padding-right: 1rem
+    justify-content: space-between
+    align-items: center
+    flex-direction: row
+    background: #ded1b2
+
+.navy_bottle1
+    height: 60%
+    position: relative
+    transform: rotate(-24deg)
+    top: -4%
+    left: 16%
+
+
+.armygreen_bottle2
+    height: 60%
+    position: relative
+    transform: rotate(-31deg)
+    top: 43%
+    right: 13%
+
+.peach_bottle3
+    height: 60%
+    position: relative
+    transform: rotate(17deg)
+    top: 10%
+    left: 16%
+
+.three_bottles
+    height: 100%
+    width: 60%
+
+.text
+    display: flex
+    justify-content: start
+    //align-items: start
+    flex-direction: column
+    width: 35%
+    margin-left: 0rem
+    z-index: 1
+
+.text_title
+  font-family: $titleFont
+
+.text_description
+  width: 100%
+  font-family: $paragraphFont
+
+.rocket 
+  display: inline-block
+
+    
+.animateNavyBottle 
+  animation: slide-top 1.5s 
+  animation-name: animate_navy_bottle
+
+
+@keyframes animate_navy_bottle
+  0%
+    transform: translateY(1000px)
+  100%
+    transform: translateY(0)
+    transform: rotate(-24deg)
+
+.animateArmyGreenBottle 
+  animation: slide-top 1.5s 
+  animation-name: animate_army_green_bottle
+
+
+@keyframes animate_army_green_bottle
+  0%
+    transform: translateY(1000px)
+  100%
+    animation-delay: 500ms
+    transform: translateY(0)
+    transform: rotate(-31deg)
+
+.animatePeachBottle 
+  animation: slide-top 1.5s 
+  animation-name: animate_peach_bottle
+
+
+@keyframes animate_peach_bottle
+  0%
+    transform: translateY(1000px)
+  100%
+    animation-delay: 250ms
+    transform: translateY(0)
+    transform: rotate(17deg)
+
+.animatetext 
+  animation: slide-in-right 1.5s 
+  animation-name: animate_text
+
+
+@keyframes animate_text
+  0%
+    transform: translatex(300px)
+    opacity: 0
+  100%
+    opacity: 1
+    animation-delay: 250ms
+    transform: translateY(0)
+    transform: rotate(0)
+
+@media only screen and (max-width: 1630px)  
+  .peach_bottle3
+    height: 60%
+    position: relative
+    transform: rotate(17deg)
+    top: 10%
+    left: 0%
+  .navy_bottle1
+    height: 60%
+    position: relative
+    transform: rotate(-24deg)
+    top: -4%
+    left: 20%
+
+@media only screen and (max-width: 1630px)  
+  .peach_bottle3
+    height: 60%
+    position: relative
+    transform: rotate(17deg)
+    top: 10%
+    left: 10%
+
+@media only screen and (max-width: 1471px)  
+  .peach_bottle3
+    height: 60%
+    position: relative
+    transform: rotate(17deg)
+    top: -50%
+    left: 60%
+  
+@media only screen and (max-width: 1236px)  
+  .peach_bottle3
+    height: 60%
+    position: relative
+    transform: rotate(17deg)
+    top: -50%
+    left: 60%
+  .navy_bottle1
+    height: 60%
+    position: relative
+    transform: rotate(-24deg)
+    top: -4%
+    left: 16%
+  .armygreen_bottle2
+    height: 60%
+    position: relative
+    transform: rotate(-31deg)
+    top: 43%
+    right: 20% 
+
+@media only screen and (max-width: 1150px)
+  .peach_bottle3
+    height: 60%
+    position: relative
+    transform: rotate(17deg)
+    top: -50%
+    left: 60%  
+
+@media only screen and (max-width: 1011px)
+  .peach_bottle3
+    height: 60%
+    position: relative
+    transform: rotate(17deg)
+    top: -110%
+    left: 50% 
+  .armygreen_bottle2
+    height: 60%
+    position: relative
+    transform: rotate(-31deg)
+    top: -23%
+    right: -10% 
+
+@media only screen and (max-width: 850px)
+  .text_title
+    width: 100%
+  .text
+    display: flex
+    width: 100%
+    justify-content: center
+    align-items: center
+    text-align: center
+    flex-direction: column
+    width: 35%
+  .peach_bottle3
+    height: 60%
+    position: relative
+    transform: rotate(17deg)
+    top: 30%
+    left: -5%
+  .navy_bottle1
+    height: 60%
+    position: relative
+    transform: rotate(-24deg)
+    top: -5%
+    left: 20%
+  .armygreen_bottle2
+    height: 60%
+    position: relative
+    transform: rotate(-31deg)
+    top: 33%
+    right: 25%
+  .bottle_presentation_wrapper
+    height: fit
+    overflow: hidden
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    background: #ded1b2
+  .three_bottles
+    height: 50%
+    width: 60%
+
+@media only screen and (max-width: 774px)  
+ 
+  .text
+    display: flex
+    width: fit
+    justify-content: center
+    align-items: center
+    text-align: center
+    flex-direction: column
+    width: 35%
+  .peach_bottle3
+    height: 60%
+    position: relative
+    transform: rotate(17deg)
+    top: 35%
+    left: 0%
+  .navy_bottle1
+    height: 60%
+    position: relative
+    transform: rotate(-24deg)
+    top: 8%
+    left: 27%
+  .armygreen_bottle2
+    height: 60%
+    position: relative
+    transform: rotate(-31deg)
+    top: 40%
+    right: 30%
+  .bottle_presentation_wrapper
+    height: fit
+    overflow: hidden
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    background: #ded1b2
+  .three_bottles
+    height: 50%
+    width: 60%
+  
+@media only screen and (max-width: 760px)  
+  .text
+    display: flex
+    width: fit
+    justify-content: center
+    align-items: center
+    text-align: center
+    flex-direction: column
+    width: 35%
+  .peach_bottle3
+    height: 60%
+    position: relative
+    transform: rotate(17deg)
+    top: -20%
+    left: 54%
+  .navy_bottle1
+    height: 60%
+    position: relative
+    transform: rotate(-24deg)
+    top: 0%
+    left: 18%
+  .armygreen_bottle2
+    height: 60%
+    position: relative
+    transform: rotate(-31deg)
+    top: 30%
+    right: 35%
+  .bottle_presentation_wrapper
+    height: fit
+    overflow: hidden
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    background: #ded1b2
+  .three_bottles
+    height: 50%
+    width: 60%
+  
+@media only screen and (max-width: 592px)  
+  .text
+    display: flex
+    width: fit
+    justify-content: center
+    align-items: center
+    text-align: center
+    flex-direction: column
+    width: 35%
+  .peach_bottle3
+    height: 60%
+    position: relative
+    transform: rotate(17deg)
+    top: -30%
+    left: 55%
+  .navy_bottle1
+    height: 60%
+    position: relative
+    transform: rotate(-24deg)
+    top: 0%
+    left: 18%
+  .armygreen_bottle2
+    height: 60%
+    position: relative
+    transform: rotate(-31deg)
+    top: 30%
+    right: 35%
+  .bottle_presentation_wrapper
+    height: fit
+    overflow: hidden
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    background: #ded1b2
+  .three_bottles
+    height: 50%
+    width: 60%
+
+  
+@media only screen and (max-width: 531px)  
+  .text_title
+    margin-left: -1rem
+  .text
+    display: flex
+    width: fit
+    margin-top: 2rem
+    margin-bottom: 4rem
+    justify-content: center
+    align-items: center
+    text-align: center
+    flex-direction: column
+    width: 35%
+  .peach_bottle3
+    height: 60%
+    position: relative
+    transform: rotate(17deg)
+    top: -30%
+    left: 58%
+  .navy_bottle1
+    height: 60%
+    position: relative
+    transform: rotate(-24deg)
+    top: 0%
+    left: 12%
+  .armygreen_bottle2
+    height: 60%
+    position: relative
+    transform: rotate(-31deg)
+    top: 30%
+    right: 45%
+  .bottle_presentation_wrapper
+    height: fit
+    overflow: hidden
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    background: #ded1b2
+  .three_bottles
+    height: 50%
+    width: 60%
+
+@media only screen and (max-width: 505px)  
+  .text_title
+    margin-left: -0.5rem
+  .text
+    display: flex
+    width: fit
+    margin-top: 2rem
+    margin-bottom: 4rem
+    justify-content: center
+    align-items: center
+    text-align: center
+    flex-direction: column
+    width: 35%
+  .peach_bottle3
+    height: 60%
+    position: relative
+    transform: rotate(17deg)
+    top: -80%
+    left: 62%
+  .navy_bottle1
+    height: 60%
+    position: relative
+    transform: rotate(-24deg)
+    top: 0%
+    left: 12%
+  .armygreen_bottle2
+    height: 60%
+    position: relative
+    transform: rotate(-31deg)
+    top: -30%
+    right: 11%
+  .bottle_presentation_wrapper
+    height: fit
+    overflow: hidden
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    background: #ded1b2
+  .three_bottles
+    height: 50%
+    width: 60%
+
+@media only screen and (max-width: 425px)  
+  .text_title
+    margin-left: -1rem
+  .text
+    display: flex
+    width: fit
+    margin-top: 2rem
+    margin-bottom: 4rem
+    justify-content: center
+    align-items: center
+    text-align: center
+    flex-direction: column
+    width: 35%
+  .peach_bottle3
+    height: 60%
+    position: relative
+    transform: rotate(17deg)
+    top: -80%
+    left: 67%
+  .navy_bottle1
+    height: 60%
+    position: relative
+    transform: rotate(-24deg)
+    top: 5%
+    left: 12%
+  .armygreen_bottle2
+    height: 60%
+    position: relative
+    transform: rotate(-31deg)
+    top: -19%
+    right: 20%
+  .bottle_presentation_wrapper
+    height: fit
+    overflow: hidden
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    background: #ded1b2
+  .three_bottles
+    height: 50%
+    width: 60%
+
+@media only screen and (max-width: 392px)  
+  .text_title
+    margin-left: -1rem
+  .text
+    display: flex
+    width: fit
+    margin-top: 2rem
+    margin-bottom: 4rem
+    justify-content: center
+    align-items: center
+    text-align: center
+    flex-direction: column
+    width: 35%
+  .peach_bottle3
+    height: 60%
+    position: relative
+    transform: rotate(17deg)
+    top: -78%
+    left: 67%
+  .navy_bottle1
+    height: 60%
+    position: relative
+    transform: rotate(-24deg)
+    top: 5%
+    left: 12%
+  .armygreen_bottle2
+    height: 60%
+    position: relative
+    transform: rotate(-31deg)
+    top: -20%
+    right: 15%
+  .bottle_presentation_wrapper
+    height: fit
+    overflow: hidden
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    background: #ded1b2
+  .three_bottles
+    height: 50%
+    width: 60%
+
+@media only screen and (max-width: 327px)  
+  .text_title
+    margin-left: 0.5rem
+  .text
+    display: flex
+    width: fit
+    margin-top: 2rem
+    margin-bottom: 8rem
+    justify-content: center
+    align-items: center
+    text-align: center
+    flex-direction: column
+    width: 35%
+  .peach_bottle3
+    height: 60%
+    position: relative
+    transform: rotate(17deg)
+    top: -78%
+    left: 67%
+  .navy_bottle1
+    height: 60%
+    position: relative
+    transform: rotate(-24deg)
+    top: 18%
+    left: 5%
+  .armygreen_bottle2
+    height: 60%
+    position: relative
+    transform: rotate(-31deg)
+    top: -15%
+    right: 30%
+  .bottle_presentation_wrapper
+    height: fit
+    overflow: hidden
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    background: #ded1b2
+  .three_bottles
+    height: 50%
+    width: 60%

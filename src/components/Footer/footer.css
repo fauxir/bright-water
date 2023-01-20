@@ -1,0 +1,13 @@
+.footer_wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+}
+
+.brand_name_footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 0px;
+}/*# sourceMappingURL=footer.css.map */

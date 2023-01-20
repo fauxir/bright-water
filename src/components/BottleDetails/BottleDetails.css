@@ -1,0 +1,14 @@
+.bottle_details_wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  flex-direction: row-reverse;
+}
+
+.img_wrapper {
+  height: 100%;
+  align-items: center;
+  display: flex;
+}/*# sourceMappingURL=BottleDetails.css.map */
